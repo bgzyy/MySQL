@@ -67,7 +67,7 @@ SELECT ROUND(AVG(CORE), 2) FROM HAND_STUDENT_CORE t1 INNER JOIN (
 -- 10、查询姓氏数量最多的学生名单，显示（学号、姓名、人数）    X
 SELECT substring(STUDENT_NAME, 1, 2) FROM HAND_STUDENT;
 
--- 11、查询课程名称为“J2SE”的学生成绩信息，90以上为“优秀”、80-90为“良好”、60-80为“及格”、60分以下为“不及格”，显示（学号、姓名、课程名称、成绩、等级）
+-- 11、查询课程名称为“J2SE”的学生成绩信息，90以上为“优秀”、80-90为“良好”、60-80为“及格”、60分以下为“不及格”，显示（学号、姓名、课程名称、成绩、等级）   X
 SELECT STUDENT_NO, CORE FROM HAND_STUDENT_CORE
 	CASE CORE
 	WHEN CORE > 90 THEN
